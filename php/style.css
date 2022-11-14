@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(30deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 400px;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+}
+
+main:hover {
+  background: rgba(255, 255, 255, 0.75);
+  transition: 0.5s;
+}
+
+.image {
+  font-size: 10rem;
+  /* infinite smooth swinging animation */
+  animation: swing 20s infinite ease-in-out;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+header{
+  width: 50%;
+  background: hotpink;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 1px white solid;
+}
+
+nav{
+  max-width: 100%;
+  padding: 1rem;
+}
+
+footer {
+  max-width: 100%;
+  background: hotpink;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+}
+
+a:hover {
+  color: cornflowerblue
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 95%;
+    height: 80vh;
+  }
+
+  header {
+    width: 95%;
+  }
+  
+  footer {
+    width: 95%;
+  }
+  
+  li {
+    font-size: 2rem;
+  }
+
+
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+    }
+
+}
+
+
+
